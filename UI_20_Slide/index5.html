@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나의 홈페이지</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        width: 50%;
+        height: 300px;
+        border: 2px solid blueviolet;
+        background-color: lightgray;
+        margin: 100px auto;
+      }
+      div:nth-of-type(1) {
+        margin-top: 800px;
+        background-image: url(Images/dog1.jpg);
+        background-size: cover;
+      }
+      div:nth-of-type(2) {
+        background-image: url(Images/dog2.jpg);
+        background-size: cover;
+      }
+      div:nth-of-type(3) {
+        background-image: url(Images/dog3.jpg);
+        background-size: cover;
+      }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </head>
+  <body>
+    <div data-aos="flip-down"></div>
+    <div data-aos="fade-down"></div>
+    <div data-aos="flip-up"></div>
+  </body>
+  <script>
+    AOS.init();
+  </script>
+</html>
